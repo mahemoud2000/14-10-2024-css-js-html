@@ -1,0 +1,66 @@
+.list-phone {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+.child-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    row-gap: 10px;
+    height: 50px;
+    background-color: var(--btnColor);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.option {
+    width: 60px;
+    height: 3px;
+    background-color: whitesmoke;
+}
+.ch {
+    width: 30px;
+    transition: width 0.5s;
+}
+.list-phone:hover .ch {
+    width: 60px;
+}
+.list-phone:hover .small-ul {
+    display: block !important;
+}
+.small-ul {
+    position: absolute;
+    top: 50px;
+    right: -20px;
+    z-index: 1000;
+    width: 100vw !important;
+    background-color: var(--btnColor);
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 20px;
+    list-style: none;
+}
+.small-ul::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid white;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -20px;
+    right: 50px;
+}
+.small-ul li {
+    margin: 10px 0;
+}
+@media (max-width: 951px) {
+    .large-ul {
+        display: none !important;
+         
+    }
+    .list-phone {
+        display: block !important;
+    }
+}   
