@@ -55,7 +55,7 @@
 .small-ul li {
     margin: 10px 0;
 }
-@media (max-width: 951px) {
+@media (max-width: 1200px) {
     .large-ul {
         display: none !important;
          
