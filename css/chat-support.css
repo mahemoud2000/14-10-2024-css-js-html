@@ -25,7 +25,7 @@ body {
 /* main-page start */
 .main-page {
     width: 100%;
-    background-color: #036dde;
+    background-color: #000;
     padding: 0 10px;
     display: flex;
     flex-direction: column;
@@ -78,10 +78,13 @@ header .large-ul li:hover {
 .main-list-phone {
     width: 90%;
     display: none;
+    margin-right: 30px;
+
 }
 .main-list-phone .child-list {
     width: fit-content;
-    background-color: rgba(17, 57, 141, 0.514);
+    background-color: rgba(17, 91, 141, 0.514);
+    /* background-color: var(--btnColor); */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -258,10 +261,14 @@ section .send-message h1 {
 /* section end */
 /* footer start */
 footer {
-
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
 }
 footer p {
-
+    color: #fff;
 }
 /* footer end */
 /* main-page end */
