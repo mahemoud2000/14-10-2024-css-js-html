@@ -71,7 +71,7 @@ header .large-ul li:hover {
     background-color: #011f3f;
 }
 .large-ul li:hover a{
-    padding-right: 20px;
+    padding-right: 20%;
 }
 
 /* screen mobile start */
